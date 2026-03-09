@@ -1,6 +1,7 @@
 #ifndef HEADER_FILE_H
 #define HEADER_FILE_H
 #include <stdint.h>
+#include <stdlib.h>
 
 int add_int(uint16_t term_1,uint16_t term_2);
 int subtract_int(uint16_t term_1,uint16_t term_2);
@@ -22,4 +23,9 @@ int bitwise_or(uint8_t int_a, uint8_t int_b);
 int bitwise_xor(uint8_t int_a, uint8_t int_b);
 int bitwise_not(uint8_t int_a);
 
+int* allocate_array(int size_of_array);
+void initialize_array(int* array_address, int size_of_array);
+int check_memory(int* array_address, int size_of_array);
+void print_array(int* array_address, int size_of_array);
+void deallocate_array(int* array_address);
 #endif 
