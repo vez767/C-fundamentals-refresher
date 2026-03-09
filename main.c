@@ -76,20 +76,20 @@ int main() {
      - You must add, commit and push your code incrementally
     */
 
-    /*
+    
     // Test bitwise operations    
-    result = bitwise_and(a_int, b_int);
-    printf("Bitwise AND: %d , %d = %d\n", a_int, b_int, result);
+    int_result = bitwise_and(a_int, b_int);
+    printf("Bitwise AND: %d , %d = %d\n", a_int, b_int, int_result);
     
-    result = bitwise_or(a_int, b_int);
-    printf("Bitwise OR: %d , %d = %d\n", a_int, b_int, result);
+    int_result = bitwise_or(a_int, b_int);
+    printf("Bitwise OR: %d , %d = %d\n", a_int, b_int, int_result);
     
-    result = bitwise_xor(a_int, b_int);
-    printf("Bitwise XOR: %d , %d = %d\n", a_int, b_int, result);
+    int_result = bitwise_xor(a_int, b_int);
+    printf("Bitwise XOR: %d , %d = %d\n", a_int, b_int, int_result);
     
-    result = bitwise_not(a_int);
-    printf("Bitwise NOT: %d = %d\n", a_int, result);
-    */
+    int_result = bitwise_not(a_int);
+    printf("Bitwise NOT: %d = %d\n", a_int, int_result);
+    
 
     /* Part 3
      - Modify myfunctions.h and myfunctions.c to hold the prototypes and functionality

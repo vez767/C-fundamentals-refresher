@@ -73,4 +73,30 @@ int divide_byte(uint32_t divisor, uint32_t dividend)
     return quotient;
 }
 
+int bitwise_and(uint8_t int_a, uint8_t int_b)
+{
+    uint8_t result = int_a & int_b;
+    return result;
+}
+
+int bitwise_or(uint8_t int_a, uint8_t int_b)
+{
+    uint8_t result = int_a | int_b;
+    return result;
+}
+
+
+int bitwise_xor(uint8_t int_a, uint8_t int_b)
+{
+    uint8_t result = int_a ^ int_b;
+    return result;
+}
+
+
+int bitwise_not(uint8_t int_a)
+{
+    uint8_t result = ~(int_a);
+    return result;
+}
+
 
