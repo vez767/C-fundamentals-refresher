@@ -1,5 +1,7 @@
 #include <stdint.h>
 #include "header_file.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 int add_int(uint16_t term_1,uint16_t term_2)
 {
@@ -99,4 +101,47 @@ int bitwise_not(uint8_t int_a)
     return result;
 }
 
+int* allocate_array(int size_of_array){
+   int* ptr = malloc(size_of_array * sizeof(int));
+   return ptr;
+}
 
+void initialize_array(int* array_address, int size_of_array){
+    if(array_address == NULL){
+        printf("\t\tERROR: array could not initalize\n");
+    }
+
+    printf("array initalized. Dedicated addresses: %p to %p\n", &array_address, &array_address + (size_of_array - 1));
+}
+
+int check_memory(int* array_address, int size_of_array)
+{
+     if (array_address == NULL) {
+        return 0; 
+    }
+    int* last_element = array_address + (size_of_array - 1);
+    return (last_element != NULL) ? 1 : 0;
+}
+
+void print_array(int* array_address, int size_of_array)
+{
+
+   printf("\t\tHere is your printed array\n");
+   printf("[") ;
+ 
+    for(int i = 0; i  < size_of_array; i++){
+        int value = *(array_address + i);
+        value = i;
+       printf("ELEMENT %d",value);  
+
+       if(i<(size_of_array - 1)){
+        printf(" ,");
+       }
+    }
+    printf("]\n") ;
+}
+
+void deallocate_array(int* array_address)
+{
+    free(array_address);
+}

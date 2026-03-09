@@ -100,7 +100,7 @@ int main() {
      - You must add, commit and push your code incrementally
     */
     
-    /*
+    
     // Test memory management
     int size = 10;
     int *array = allocate_array(size);
@@ -121,7 +121,7 @@ int main() {
     } else {
         printf("Memory deallocation failed or pointer not set to NULL.\n");
     }
-    */
+    
 
     /* Part 4
     - Modify myfunctions.h and myfunctions.c to hold the prototypes and functionality
