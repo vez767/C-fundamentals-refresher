@@ -39,7 +39,7 @@ int main() {
     int_result = divide_int(a_int, b_int);
     printf("Integer Division: %d , %d = %d\n", a_int, b_int, int_result);
     
-    /* Test basic math operations with floats
+    // Test basic math operations with floats//
     float_result = add_float(a_float, b_float);
     printf("Float Addition: %.2f , %.2f = %.2f\n", a_float, b_float, float_result);
     
@@ -51,7 +51,7 @@ int main() {
     
     float_result = divide_float(a_float, b_float);
     printf("Float Division: %.2f , %.2f = %.2f\n", a_float, b_float, float_result);
-    
+    /*
     // Test basic math operations with bytes
     byte_result = add_byte(a_byte, b_byte);
     printf("Byte Addition: 0x%X , 0x%X = 0x%X\n", a_byte, b_byte, byte_result);
