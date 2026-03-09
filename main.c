@@ -51,7 +51,7 @@ int main() {
     
     float_result = divide_float(a_float, b_float);
     printf("Float Division: %.2f , %.2f = %.2f\n", a_float, b_float, float_result);
-    /*
+    
     // Test basic math operations with bytes
     byte_result = add_byte(a_byte, b_byte);
     printf("Byte Addition: 0x%X , 0x%X = 0x%X\n", a_byte, b_byte, byte_result);

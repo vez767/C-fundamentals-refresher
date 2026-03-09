@@ -10,5 +10,9 @@ int add_float(float term_1, float term_2);
 int subtract_float(float term_1, float term_2);
 int multiply_float(float factor_1, float factor_2);
 int divide_float(float divisor, float dividend);
+int add_byte(uint32_t byte_1, uint32_t byte_2);
+int subtract_byte(uint32_t byte_1, uint32_t byte_2);
+int multiply_byte(uint32_t factor_1, uint32_t factor_2);
+int divide_byte(uint32_t divisor, uint32_t dividend);
 
 #endif 
