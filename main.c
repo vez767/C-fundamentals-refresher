@@ -137,12 +137,12 @@ int main() {
         - `float grade;`  // The student's GPA
     */
     
-    /*
+    
     struct Student student1 = create_student("John Doe", 12345, 3.7);
     
     print_student(student1);
     free_student(&student1);
-
+/*
     struct Student students[100];
     int student_count = 0;
     

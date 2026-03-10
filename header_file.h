@@ -2,6 +2,7 @@
 #define HEADER_FILE_H
 #include <stdint.h>
 #include <stdlib.h>
+#include <string.h>
 
 int add_int(uint16_t term_1,uint16_t term_2);
 int subtract_int(uint16_t term_1,uint16_t term_2);
@@ -28,4 +29,14 @@ void initialize_array(int* array_address, int size_of_array);
 int check_memory(int* array_address, int size_of_array);
 void print_array(int* array_address, int size_of_array);
 void deallocate_array(int* array_address);
+
+struct Student{
+    char name[50];
+    int id;
+    float grade;
+};
+
+struct Student create_student(char *student_name, int id, float grade);
+void print_student(struct Student specific_student);
+void free_student(struct Student *specific_student);
 #endif 

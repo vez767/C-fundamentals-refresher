@@ -2,6 +2,7 @@
 #include "header_file.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 int add_int(uint16_t term_1,uint16_t term_2)
 {
@@ -144,4 +145,28 @@ void print_array(int* array_address, int size_of_array)
 void deallocate_array(int* array_address)
 {
     free(array_address);
+}
+
+struct Student create_student(char *student_name, int student_id, float student_grade)
+{
+    struct Student student;
+
+    strcpy(student.name, student_name);
+    student.id = student_id;
+    student.grade = student_grade;
+
+    return student;
+}
+
+void print_student(struct Student specific_student)
+{
+    printf("\n\t\tDetails of %s are:\n\n\n", specific_student.name);
+    printf("Name: %s\t| ID: %d\t| Grade: %.2f\n", specific_student.name, specific_student.id, specific_student.grade);
+}
+
+void free_student(struct Student *specific_student)
+{
+    if(specific_student != NULL){
+    free(specific_student);
+    }
 }
