@@ -166,7 +166,19 @@ void print_student(struct Student specific_student)
 
 void free_student(struct Student *specific_student)
 {
-    if(specific_student != NULL){
-    free(specific_student);
+  
+}
+
+void add_student(struct Student students[], int* student_no, struct Student new_student) {
+   *(students + (*student_no))= new_student;
+    (*student_no)++; 
+}
+
+void print_all_students(struct Student students[], int student_no) {
+    printf("\n\t\tSTUDENTS LIST\n\n");
+
+    printf("  Name\t\tStudent ID\t     Student Grade\n");
+    for (int i = 0; i < student_no; i++) {
+        printf("%s\t %d\t\t\t %.2f\n", (*(students + i)).name, (*(students + i)).id, (*(students + i)).grade);
     }
 }

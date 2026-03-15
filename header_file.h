@@ -39,4 +39,6 @@ struct Student{
 struct Student create_student(char *student_name, int id, float grade);
 void print_student(struct Student specific_student);
 void free_student(struct Student *specific_student);
+void  add_student(struct Student students[], int* student_no,struct Student new_student);
+void print_all_students(struct Student students[], int student_no);
 #endif 

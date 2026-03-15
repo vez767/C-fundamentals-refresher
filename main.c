@@ -142,14 +142,14 @@ int main() {
     
     print_student(student1);
     free_student(&student1);
-/*
+
     struct Student students[100];
     int student_count = 0;
     
     add_student(students, &student_count, create_student("John Doe", 12345, 3.7));
     add_student(students, &student_count, create_student("Jane Smith", 67890, 3.9));
     print_all_students(students, student_count);
-    */
+    
 
     return 0;
 }
